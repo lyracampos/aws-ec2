@@ -1,0 +1,41 @@
+@model GLC.AWS.EC2.Site.Models.EC2.EC2InstanceListModel
+@{
+    ViewData["Title"] = "Instâncias EC2";
+}
+@if (Model.HasInstance)
+{
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">Id</th>
+              <th scope="col">Tipo</th>
+              <th scope="col">Zona</th>
+              <th scope="col">Status</th>
+              <th scope="col">Visualizar</th>
+            </tr>
+          </thead>
+          <tbody>
+              @foreach (var instance in Model.Instances)
+              {
+                <tr>
+                  <td>@instance.TagName</td>
+                  <td>@instance.InstanceId</td>
+                  <td>@instance.InstanceType</td>
+                  <td>@instance.AvailabilityZone</td>
+                  <td><span style="@instance.StatusCss();">@instance.StatusDescription</span></td>
+                  <td>
+                    <a class="btn btn-primary" asp-action="detail" asp-controller="ec2" asp-route-id="@instance.InstanceId">Visualizar</a>
+                  </td>
+                </tr>
+              }
+          </tbody>
+        </table>
+}
+else
+{
+     <div class="text-center">
+            <h1 class="display-4">Instâncias EC2</h1>
+            <p>Nenhuma instância EC2 foi encontrada na zona configurada. Reveja configurações.</p>
+    </div>
+}

@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{B8578C68-ED69-49E2-A2C9-FB1B1DF5AF22}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/GLC.AWS.EC2.Site/Models/EC2/EC2InstanceModel.cs">
+    <Files>
+      <File FileName="src/GLC.AWS.EC2.Services/Services/EC2Service.cs" Line="61" Column="60" />
+      <File FileName="src/GLC.AWS.EC2.Site/Controllers/EC2Controller.cs" Line="28" Column="1" />
+      <File FileName="src/GLC.AWS.EC2.Site/Views/EC2/Detail.cshtml" Line="30" Column="13" />
+      <File FileName="src/GLC.AWS.EC2.Site/Views/EC2/Index.cshtml" Line="26" Column="22" />
+      <File FileName="src/GLC.AWS.EC2.Site/Models/EC2/EC2InstanceModel.cs" Line="29" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GLC.AWS.EC2" expanded="True">
+            <Node name="GLC.AWS.EC2.Services" expanded="True">
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="GLC.AWS.EC2.Site" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="EC2" expanded="True">
+                  <Node name="EC2InstanceModel.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="EC2" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.GLC.AWS.EC2.Site PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/aws-ec2/GLC.AWS.EC2/src/GLC.AWS.EC2.Site/Controllers/EC2Controller.cs" relfile="src/GLC.AWS.EC2.Site/Controllers/EC2Controller.cs" line="42" column="1" />
+      <Breakpoint file="/Users/guilhermelyracampos/Documents/profissional/projetos/git/aws-ec2/GLC.AWS.EC2/src/GLC.AWS.EC2.Services/Services/EC2Service.cs" relfile="src/GLC.AWS.EC2.Services/Services/EC2Service.cs" line="43" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLC.AWS.EC2.Site", "src\GLC.AWS.EC2.Site\GLC.AWS.EC2.Site.csproj", "{B8578C68-ED69-49E2-A2C9-FB1B1DF5AF22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLC.AWS.EC2.Services", "src\GLC.AWS.EC2.Services\GLC.AWS.EC2.Services.csproj", "{3C770F96-F987-4523-91E2-FF8AFBF65EE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8578C68-ED69-49E2-A2C9-FB1B1DF5AF22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8578C68-ED69-49E2-A2C9-FB1B1DF5AF22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8578C68-ED69-49E2-A2C9-FB1B1DF5AF22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8578C68-ED69-49E2-A2C9-FB1B1DF5AF22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C770F96-F987-4523-91E2-FF8AFBF65EE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C770F96-F987-4523-91E2-FF8AFBF65EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C770F96-F987-4523-91E2-FF8AFBF65EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C770F96-F987-4523-91E2-FF8AFBF65EE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

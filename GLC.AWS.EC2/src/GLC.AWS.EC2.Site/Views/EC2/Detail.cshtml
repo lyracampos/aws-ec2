@@ -1,0 +1,58 @@
+@model GLC.AWS.EC2.Site.Models.EC2.EC2InstanceModel
+@{
+    ViewData["Title"] = @Model.TagName;
+}
+<div class="col-6">
+    <h3>@ViewData["Title"]</h3>
+</div>
+<div class="row">
+    <div class="col-6">
+        <div>
+            <label class="text-bold" for="nome">Nome:</label>
+            <label id="nome">@Model.TagName</label>
+        </div>
+         <div>
+            <label class="text-bold" for="id">Id:</label>
+            <label id="id">@Model.InstanceId</label>
+        </div>
+         <div>
+            <label  class="text-bold" for="statusDescription">Status:</label>
+            <label style="@Model.StatusCss();" id="statusDescription">@Model.StatusDescription</label>
+        </div>
+        <div>
+            <label class="text-bold" for="instanceType">Tipo:</label>
+            <label id="instanceType">@Model.InstanceType</label>
+        </div>
+        <div>
+            <label class="text-bold" for="privateDNS">DNS privado:</label>
+            <label id="privateDNS">@Model.PrivateDNS</label>
+        </div>
+        <div>
+            <label class="text-bold" for="privateIp">IP privado:</label>
+            <label id="privateIp">@Model.PrivateIp</label>
+        </div>
+         <div>
+            <label class="text-bold" for="publicDNSIpv4">DNS público:</label>
+            <label id="publicDNSIpv4">@Model.PublicDNSIpv4</label>
+        </div>
+        <div>
+            <label class="text-bold" for="iPv4PublicIp">IPv4 público:</label>
+            <label id="iPv4PublicIp">@Model.IPv4PublicIp</label>
+        </div>
+        <div>
+            <label class="text-bold" for="availabilityZone">Zona:</label>
+            <label id="availabilityZone">@Model.AvailabilityZone</label>
+        </div>
+    </div>
+    <div class="col-6">
+         <div class="form-group">
+            <a asp-action="start" asp-controller="ec2" asp-route-id="@Model.InstanceId" class="btn btn-success col-4">Start</a>
+        </div>
+         <div class="form-group">
+            <a asp-action="restart" asp-controller="ec2" asp-route-id="@Model.InstanceId" class="btn btn-primary col-4">Restart</a>
+        </div>
+         <div class="form-group">
+             <a asp-action="stop" asp-controller="ec2" asp-route-id="@Model.InstanceId" class="btn btn-danger col-4">Stop</a>
+        </div>
+    </div>
+</div>
